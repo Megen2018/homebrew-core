@@ -13,6 +13,7 @@ class Carthage < Formula
   end
 
   depends_on :xcode => ["10.0", :build]
+  depends_on :macos => :sierra
 
   def install
     if MacOS::Xcode.version >= "10.2" && MacOS.full_version < "10.14.4" && MacOS.version >= "10.14"
